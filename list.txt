@@ -1,5 +1,5 @@
 akmod-nvidia
-xorg-x11-drv-nvidia
+xorg-x11-drv-nvidia-cuda
 rtl88x2bu
 grsync
 smplayer
