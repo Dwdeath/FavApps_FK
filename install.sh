@@ -39,4 +39,4 @@ $add_copr_repo $(awk '{print $1}' curl -s repo_list_copr)
 sudo rpm-ostree upgrade
 
 # Install some packages
-sudo $install $(awk '{print $1}' curl -s apps_list)
+$install $(awk '{print $1}' curl -s apps_list)
