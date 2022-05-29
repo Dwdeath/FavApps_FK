@@ -4,7 +4,8 @@
 
 # Some variables 
 install="rpm-ostree install"
-remove=rpm-"ostree uninstall"
+remove="rpm-ostree uninstall"
+hard_remove="rpm-ostree override remove"
 apps_list=https://dwdeath.github.io/FavApps_FK/list.txt
 
 
