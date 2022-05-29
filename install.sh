@@ -3,9 +3,10 @@
 ###################################
 
 # Some variables 
-install="rpm-ostree install"
-remove="rpm-ostree uninstall"
-hard_remove="rpm-ostree override remove"
+install="rpm-ostree install "
+remove="rpm-ostree uninstall "
+hard_remove="rpm-ostree override remove "
+copr_repo="sudo wget -P /etc/yum.repos.d/ "
 apps_list=https://dwdeath.github.io/FavApps_FK/list.txt
 
 
@@ -26,8 +27,14 @@ sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free
 sudo rpm-ostree install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Enable copr packages
-sudo ostree remote add rtl88x2bu https://download.copr.fedorainfracloud.org/results/benjaminfo/rtl8822bu/fedora-$releasever-$basearch/
+$copr_repo https://copr.fedorainfracloud.org/coprs/benjaminfo/rtl8822bu/repo/fedora-36/benjaminfo-rtl8822bu-fedora-36.repo
+$copr_repo https://copr.fedorainfracloud.org/coprs/farribeiro/rtl88x2bu-kmod/repo/fedora-36/farribeiro-rtl88x2bu-kmod-fedora-36.repo
+$copr_repo https://copr.fedorainfracloud.org/coprs/scorreia/rtl88x2bu/repo/fedora-36/scorreia-rtl88x2bu-fedora-36.repo
+#sudo ostree remote add rtl88x2bu https://download.copr.fedorainfracloud.org/results/benjaminfo/rtl8822bu/fedora-$releasever-$basearch/
 #sudo ostree remote add 
+
+# Apply the repos
+sudo rpm-ostree upgrade
 
 # Install some packages
 sudo $install $(awk '{print $1}' curl -s apps_list)
