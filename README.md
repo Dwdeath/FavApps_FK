@@ -27,8 +27,13 @@ I will laugh at you.
 
 Usage:
 ```sh
-bash <(curl -s https://dwdeath.github.io/FavApps_FK/install.sh)
+bash <(curl -s https://dwdeath.github.io/FavApps_FK/add_repo.sh)
 ```
+then, after reboot:
+```sh
+bash <(curl -s https://dwdeath.github.io/FavApps_FK/install_apps.sh)
+```
+
 or
 ```sh
 curl -s https://dwdeath.github.io/FavApps_FK/
