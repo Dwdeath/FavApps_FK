@@ -9,7 +9,7 @@ install="rpm-ostree install "
 remove="rpm-ostree uninstall "
 hard_remove="rpm-ostree override remove "
 add_copr_repo="sudo wget -P /etc/yum.repos.d/ "
-apps_list=https://dwdeath.github.io/FavApps_FK/list.txt
+apps_list="https://dwdeath.github.io/FavApps_FK/app_list.txt"
 repo_list_copr="https://dwdeath.github.io/FavApps_FK/copr_repo.txt"
 
 # Remove Packages I don't need 
