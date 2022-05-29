@@ -10,9 +10,9 @@ If you do not know who I am or what
 this page is, DO NOT run this on your system!
 
 This script was tested on and is meant to be
-used on
-RegadaOS
-and using it on any other system WILL MESS IT UP.
+used ONLY on
+Fedora Kinoite
+and using it on any other system will probably MESS IT UP.
 
 *You should never run unknown scripts.
 
@@ -27,11 +27,11 @@ I will laugh at you.
 
 Usage:
 ```sh
-bash <(curl -s https://dwdeath.github.io/SUSEFavApps/install.sh)
+bash <(curl -s https://dwdeath.github.io/FavApps_FK/install.sh)
 ```
 or
 ```sh
-curl -s https://dwdeath.github.io/SUSEFavApps/
+curl -s https://dwdeath.github.io/FavApps_FK/
 ```
 and run the bash code using copy+paste
 
@@ -39,6 +39,6 @@ THE SYSTEM WILL REBOOT AT THE END
 
 alternatively you can preform 
 ```sh
-git clone https://github.com/Dwdeath/SUSEFavApps
+git clone https://github.com/Dwdeath/FavApps_FK
 ```
-to get all of the scripts.
+to get all of the scripts(old ones included).
