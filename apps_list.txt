@@ -1,5 +1,6 @@
 akmod-nvidia
 xorg-x11-drv-nvidia-cuda
+distrobox
 rtl88x2bu
 grsync
 smplayer
