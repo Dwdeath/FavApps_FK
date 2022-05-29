@@ -35,8 +35,6 @@ curl -s https://dwdeath.github.io/FavApps_FK/
 ```
 and run the bash code using copy+paste
 
-THE SYSTEM WILL REBOOT AT THE END
-
 alternatively you can preform 
 ```sh
 git clone https://github.com/Dwdeath/FavApps_FK
