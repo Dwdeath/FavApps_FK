@@ -1,0 +1,3 @@
+https://copr.fedorainfracloud.org/coprs/scorreia/rtl88x2bu/repo/fedora-36/scorreia-rtl88x2bu-fedora-36.repo
+https://copr.fedorainfracloud.org/coprs/benjaminfo/rtl8822bu/repo/fedora-36/benjaminfo-rtl8822bu-fedora-36.repo
+https://copr.fedorainfracloud.org/coprs/farribeiro/rtl88x2bu-kmod/repo/fedora-36/farribeiro-rtl88x2bu-kmod-fedora-36.repo
