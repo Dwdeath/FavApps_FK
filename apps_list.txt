@@ -7,12 +7,5 @@ audacious
 lutris
 protonup-qt
 gwe
-goverlay
-hollywood
-cava
 wget
-protonup-qt
-wireshark-ui-qt
-droidcam
 neofetch
-android-sdk-platform-tools
