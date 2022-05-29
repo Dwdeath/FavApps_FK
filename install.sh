@@ -12,12 +12,12 @@ repo_list_copr="https://dwdeath.github.io/FavApps_FK/copr_repo.txt"
 
 
 # Update the system
-rpm-ostree upgrade
-rpm-ostree update
+#rpm-ostree upgrade
+#rpm-ostree update
 
 # Remove Packages I don't need 
-$remove firefox
-$remove vlc
+#$remove firefox
+#$remove vlc
 
 # Enable some stuff 
 flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
@@ -36,7 +36,7 @@ $add_copr_repo $(awk '{print $1}' curl -s repo_list_copr)
 #sudo ostree remote add 
 
 # Apply the repos
-sudo rpm-ostree upgrade
+#sudo rpm-ostree upgrade
 
 # Install some packages
 $install $(awk '{print $1}' curl -s apps_list)
