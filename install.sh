@@ -1,13 +1,20 @@
-# set variables
-apps_list=https://dwdeath.github.io/SUSEFavApps/list.txt
+###################################
+## Eddie's Custom Fedora Kinoite ##
+###################################
 
-# remove unwanted packages
-sudo apt-get -y remove firefox
-sudo apt-get -y remove vlc
+# Some variables 
+apps_list=https://dwdeath.github.io/FavApps_FK/list.txt
 
-# update system
-sudo apt-get -y update
-sudo apt-get -y upgrade
 
-# install pkg
-sudo apt-get -y install $(awk '{print $1}' curl -s apps_list)
+# Update the system
+
+
+# Remove Packages I don't need 
+# firefox
+# vlc
+
+# Enable some stuff 
+
+
+# Install some packages
+ostree $(awk '{print $1}' curl -s apps_list)
