@@ -7,7 +7,7 @@ apps_list=https://dwdeath.github.io/FavApps_FK/list.txt
 
 
 # Update the system
-
+rpm-ostree upgrade
 
 # Remove Packages I don't need 
 # firefox
@@ -17,4 +17,4 @@ apps_list=https://dwdeath.github.io/FavApps_FK/list.txt
 
 
 # Install some packages
-ostree $(awk '{print $1}' curl -s apps_list)
+rpm-ostree $(awk '{print $1}' curl -s apps_list)
