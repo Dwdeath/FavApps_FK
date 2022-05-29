@@ -26,7 +26,7 @@ sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free
 sudo rpm-ostree install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Enable copr packages
-sudo ostree remote add rtl88x2bu https://download.copr.fedorainfracloud.org/results/farribeiro/rtl88x2bu-kmod/fedora-$releasever-$basearch/
+sudo ostree remote add rtl88x2bu https://download.copr.fedorainfracloud.org/results/benjaminfo/rtl8822bu/fedora-$releasever-$basearch/
 #sudo ostree remote add 
 
 # Install some packages
