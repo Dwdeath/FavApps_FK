@@ -1,5 +1,5 @@
-flatpak
-distrobox
+akmod-nvidia
+xorg-x11-drv-nvidia
 rtl88x2bu
 grsync
 smplayer
@@ -15,5 +15,4 @@ protonup-qt
 wireshark-ui-qt
 droidcam
 neofetch
-flatpak
 android-sdk-platform-tools
