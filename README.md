@@ -34,12 +34,6 @@ then, after reboot:
 bash <(curl -s https://dwdeath.github.io/FavApps_FK/install_apps.sh)
 ```
 
-or
-```sh
-curl -s https://dwdeath.github.io/FavApps_FK/
-```
-and run the bash code using copy+paste
-
 alternatively you can preform 
 ```sh
 git clone https://github.com/Dwdeath/FavApps_FK
