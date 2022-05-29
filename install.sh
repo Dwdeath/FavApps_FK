@@ -12,12 +12,7 @@ repo_list_copr="https://dwdeath.github.io/FavApps_FK/copr_repo.txt"
 
 
 # Update the system
-#rpm-ostree upgrade
-#rpm-ostree update
-
-# Remove Packages I don't need 
-#$remove firefox
-#$remove vlc
+rpm-ostree upgrade
 
 # Enable some stuff 
 flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
@@ -29,14 +24,11 @@ sudo rpm-ostree install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-n
 
 # Enable copr packages
 $add_copr_repo $(awk '{print $1}' curl -s repo_list_copr)
-# $copr_repo https://copr.fedorainfracloud.org/coprs/benjaminfo/rtl8822bu/repo/fedora-36/benjaminfo-rtl8822bu-fedora-36.repo
-# $copr_repo https://copr.fedorainfracloud.org/coprs/farribeiro/rtl88x2bu-kmod/repo/fedora-36/farribeiro-rtl88x2bu-kmod-fedora-36.repo
-# $copr_repo https://copr.fedorainfracloud.org/coprs/scorreia/rtl88x2bu/repo/fedora-36/scorreia-rtl88x2bu-fedora-36.repo
-#sudo ostree remote add rtl88x2bu https://download.copr.fedorainfracloud.org/results/benjaminfo/rtl8822bu/fedora-$releasever-$basearch/
-#sudo ostree remote add 
 
 # Apply the repos
-#sudo rpm-ostree upgrade
+sudo rpm-ostree upgrade
+sudo rpm-ostree update
+exit 0
 
-# Install some packages
-$install $(awk '{print $1}' curl -s apps_list)
+# Reboot
+systemctl reboot
