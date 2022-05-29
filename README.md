@@ -33,9 +33,3 @@ then, after reboot:
 ```sh
 bash <(curl -s https://dwdeath.github.io/FavApps_FK/install_apps.sh)
 ```
-
-alternatively you can preform 
-```sh
-git clone https://github.com/Dwdeath/FavApps_FK
-```
-to get all of the scripts(old ones included).
